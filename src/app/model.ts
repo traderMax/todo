@@ -1,6 +1,6 @@
 let model = {
     user: "Adam",
-    items [
+    items: [
         {action: "Buy Flowers", done: false},
         {action: "Get Shoes", done: false},
         {action: "Collect Tickets", done: true},
@@ -25,7 +25,7 @@ export class Model {
         this.items = [
             new TodoItem("Buy Flowers",false)
         ]
-        this.items.concat(model.items)
+
     }
 
 }
