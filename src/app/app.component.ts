@@ -11,5 +11,10 @@ export class AppComponent {
   getName(){
     return this.model.user;
   }
+
+  getTodoItems(){
+    console.log(this.model);
+    return this.model.items;
+  }
   title = 'todo';
 }
