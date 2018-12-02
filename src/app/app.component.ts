@@ -14,7 +14,7 @@ export class AppComponent {
 
   getTodoItems(){
     console.log(this.model);
-    return this.model.items;
+    return this.model.items.filter(item=>!item.done);
   }
   title = 'todo';
 }
