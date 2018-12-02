@@ -23,9 +23,10 @@ export class Model {
     constructor(){
         this.user = "Adam";
         this.items = [
-            new TodoItem("Buy Flowers",false)
+            new TodoItem("Cook a meal",false)
         ]
-
+        this.items = [...this.items, ...model.items]
+        console.log(this.items);
     }
 
 }
